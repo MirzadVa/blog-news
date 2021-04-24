@@ -1,20 +1,25 @@
 /* eslint-disable react/prop-types */
+
 import React from 'react'
 
 import './menu-item.css';
 
 const MenuItem = (props) => {
     return (
-        <div className='menu-item-wrapper'>
-            <p className={props.active ? 'menu-item active-item' : 'menu-item'}>{props.icon} <span>{props.name}</span></p>
-        </div>
+        props.small ? (
+            <div className='menu-item-wrapper'>
+                <p className='menu-item smaller'>{props.active ? props.activeIcon : props.icon} 
+                    {!props.small ? <span>{props.name}</span> : null}
+                </p>
+            </div>
+        ) : ( 
+            <div className='menu-item-wrapper'>
+                <p className={props.active ? 'menu-item active-item' : 'menu-item'}>{props.active ? props.activeIcon : props.icon} 
+                    {!props.small ? <span>{props.name}</span> : null}
+                </p>
+            </div>  
+        )
     )
 }
 
 export default MenuItem
-
-// MenuItem.propTypes = {
-//     icon: null,
-//     name: String,
-//     active: Boolean
-// };

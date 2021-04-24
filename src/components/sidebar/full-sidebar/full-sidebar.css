@@ -1,0 +1,32 @@
+.sidebar-container {
+  max-width: 15%;
+  min-width: 15%;
+  padding-left: 1%;
+  border-right: 2px solid rgba(118, 135, 157, 0.3);
+}
+.route-link {
+  text-decoration: none;
+}
+.menu-headline {
+  font-weight: 1000;
+  color: #76879d;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.menu-headline span {
+  margin-right: 5%;
+  margin-top: 1%;
+}
+.small {
+  max-width: 5%;
+  min-width: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+.menu-burger {
+  cursor: pointer;
+}
