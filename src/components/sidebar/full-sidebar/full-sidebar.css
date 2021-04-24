@@ -3,6 +3,7 @@
   min-width: 15%;
   padding-left: 1%;
   border-right: 2px solid rgba(118, 135, 157, 0.3);
+  animation: open 0.5s;
 }
 .route-link {
   text-decoration: none;
@@ -21,11 +22,31 @@
 .small {
   max-width: 5%;
   min-width: 5%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  /* text-align: center; */
+  /* display: flex;
+  flex-direction: column; */
   font-size: 20px;
+  animation: close 0.5s;
+}
+@keyframes close {
+  0% {
+    max-width: 15%;
+    min-width: 15%;
+  }
+  100% {
+    max-width: 5%;
+    min-width: 5%;
+  }
+}
+@keyframes open {
+  0% {
+    max-width: 5%;
+    min-width: 5%;
+  }
+  100% {
+    max-width: 15%;
+    min-width: 15%;
+  }
 }
 .menu-burger {
   cursor: pointer;
