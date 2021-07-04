@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
                 <ul className='navbar-ul'>
                     <li onClick={goToHome}>Home</li>
-                    <li>Search</li>
+                    <li onClick={() => history.push('/search')}>Search</li>
                     <li>About</li>
                 </ul>
             </div>

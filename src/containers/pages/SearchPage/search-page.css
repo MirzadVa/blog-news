@@ -26,19 +26,34 @@ input[type=search]:focus {
     border-color: #66CC75;
     box-shadow: 0 0 5px rgba(109,207,246,.5);
   }
-  .results-container{
-    width: 80%;
+.results-container{
+    width: 100%;
     margin: auto;
-  }
-  .results{
+}
+.results{
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10%;
-  }
-
-  .result-box{
-        border: 1px solid blue;
-        height: 300px;
-  }
+    grid-column-gap: 5%;
+    grid-row-gap: 10%;
+    position: relative;
+ }
+.result-box{
+    height: 300px;
+    /* width: 50%; */
+}
+.first-visit-div{
+    text-align: center;
+    color: #a3a3a3;
+}
+.no-resutls-wrapper{
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    text-align: center;
+}
+.no-resutls-wrapper h4{
+    color: #8B9EBA;
+}
