@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
-import './app.css'
-import MainLayout from './layout/MainLayout';
-
+import React from 'react'
+import MainLayout from './layout/MainLayout'
 import { BrowserRouter as Router } from 'react-router-dom'
+import './App.css'
 
 const App = () => {
   return(
@@ -15,4 +14,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App

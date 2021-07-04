@@ -1,0 +1,32 @@
+.card-popular-wrapper {
+  width: 100%;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding: 10px 0;
+}
+.popular-headline {
+  font-size: 0.7em;
+  margin-top: 0;
+  margin-bottom: 3px;
+  padding: 0;
+  color: #ee3160 !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+.popular-description {
+  font-size: 0.6em;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: #969696;
+  margin-top: 5px;
+}
+.popular-time {
+  font-size: 0.6em;
+  margin: 0;
+  padding: 0;
+  margin-top: 3px;
+  font-weight: normal;
+  color: #969696;
+  text-align: right;
+  margin-top: 10px;
+}

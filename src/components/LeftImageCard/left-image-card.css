@@ -1,0 +1,17 @@
+.left-image-card-wrapper {
+  display: flex;
+  margin-top: 15px;
+}
+.image-news {
+  height: 30%;
+  width: 30%;
+}
+.card-content {
+  margin-left: 20px;
+}
+.card-content h4 {
+  margin-top: 0;
+  padding: 0;
+}
+.card-content p {
+}

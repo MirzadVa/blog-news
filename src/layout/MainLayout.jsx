@@ -5,13 +5,13 @@ import './main-layout.css';
 import routes from '../routes';
 
 /*Component import*/
-import Sidebar from '../components/sidebar/Sidebar';
-import MainPage from '../components/MainPage'
+import MainPage from '../containers/pages/MainPage/MainPage'
+import Navbar from '../containers/Navbar/Navbar';
 
 const MainLayout = () => {
     return (
         <div className='main-content'>
-            <Sidebar />
+            <Navbar />
             <Switch>
                 {routes.map((route, index) => (
                     <Route path={route.path} key={index} exact={route.exact ? route.exact : null}>
