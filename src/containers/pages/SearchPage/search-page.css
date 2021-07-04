@@ -1,0 +1,44 @@
+.search-page-wrapper{
+    width: 80%;
+    margin: auto;
+}
+.search-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=search] {
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 500px;
+    border-radius: 10em;    
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+    position: relative;
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+}
+input[type=search]:focus {
+    margin: auto;
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+  }
+  .results-container{
+    width: 80%;
+    margin: auto;
+  }
+  .results{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+  }
+
+  .result-box{
+        border: 1px solid blue;
+        height: 300px;
+  }

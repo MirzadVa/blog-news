@@ -1,8 +1,13 @@
-.navbar-container {
+.navbar-wrapper{
   width: 100%;
+  background-color: #000;
+}
+.navbar-container {
+  width: 80%;
+  margin: auto;
   height: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-right: 20px;
   background-color: #000;
@@ -15,6 +20,7 @@
 }
 .navbar-container h3 {
   font-size: 2em;
+  cursor: pointer;
 }
 .navbar-ul {
   list-style-type: none;
