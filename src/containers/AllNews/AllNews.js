@@ -8,7 +8,7 @@ const AllNews = ({restOfHeadlines, smallBoxes}) => {
     return (
         <div>
             <div className='all-news-wrapper'>
-                {restOfHeadlines?.length > 0 && restOfHeadlines?.map((elem, index) => {
+                {restOfHeadlines?.length > 0 && restOfHeadlines?.forEach((elem, index) => {
                     if(index < 4){
                         return (
                             <div class={`box${index + 1} box-holder`}>

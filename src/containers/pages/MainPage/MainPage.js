@@ -28,11 +28,11 @@ const MainPage = () => {
                 for(var i = 0; i < 5; i++){
                     topFive.push(response.data.articles[i])
                 }
-                for(var i = 5; i < 11; i++){
-                    restOf.push(response.data.articles[i])
+                for(var j = 5; j < 11; j++){
+                    restOf.push(response.data.articles[j])
                 }
-                for(var i = 11; i < response.data.articles.length; i++){
-                    smallBox.push(response.data.articles[i])
+                for(var x = 11; x < response.data.articles.length; x++){
+                    smallBox.push(response.data.articles[x])
                 }
                 setTopFiveNews([...topFive])
                 setRestOfHeadlines([...restOf])
@@ -45,6 +45,7 @@ const MainPage = () => {
     }
     useEffect(() => {
         fetchTopFiveHeadlines()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
             isLoading ? (

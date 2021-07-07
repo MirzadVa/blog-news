@@ -6,3 +6,9 @@
   height: 75%;
   width: 100%;
 }
+.news-headline {
+  cursor: pointer;
+}
+.news-headline:hover {
+  color: var(--redMainColor);
+}
