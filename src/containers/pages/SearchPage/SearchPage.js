@@ -97,23 +97,26 @@ const SearchPage = () => {
                             {value: 'popularity', label: 'Popularity'},
                             {value: 'publishedAt', label: 'PublishedAt'},
                         ]}
+                        sortBy={sortBy}
                         handleChange={(e) => setSortBy(e)}/> ) : null }
                     </div> 
                 </div>
                 <Row className='results-container'>
                 {isSearcing ? (
+                    <div className='search-loading'>
                         <SearhcLoading lotti={loading} height={150} width={150} />
+                    </div>
                 ) : (
                     !isFirstVisit ? (
                         searchFailed && !isFirstVisit ? (
-                            <div>
+                            <div className='no-results-found'>
                                 <img src={NotFound} alt='Not found' />
                                 <h1>Sorry! No results found :(</h1>
                                 <h4>We couldn't find what you are looking for. <br /> Please try another way</h4>
                             </div>
                         ) : (
                             searchResults.map((elem, index) => (
-                                <Col xs={12} sm={6} md={4} className='result-box' key={index}>
+                                <Col xs={12} sm={12} md={6} lg={4} className='result-box' key={index}>
                                     <StandardNewsCard news={elem} />
                                 </Col>
                             ))

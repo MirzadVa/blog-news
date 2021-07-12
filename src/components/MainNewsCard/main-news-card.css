@@ -47,6 +47,11 @@
 .main-news-card-wrapper:hover .news-card-title {
   color: var(--redMainColor);
 }
+@media (max-width: 1228px) {
+  .news-card-title {
+    font-size: 0.6em;
+  }
+}
 @media (max-width: 1025px) {
   .first-row {
     display: flex;

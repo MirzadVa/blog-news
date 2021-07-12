@@ -5,3 +5,15 @@
   justify-content: center;
   margin: 30px 0;
 }
+.arrow-down {
+  animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

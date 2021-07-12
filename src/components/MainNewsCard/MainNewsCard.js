@@ -25,7 +25,7 @@ const MainNewsCard = ({imageUrl, title, date, author, bigCard, content}) => {
         <div className='main-news-card-wrapper'>
             <img src={imageUrl !== null ? imageUrl : ReserveImage} className='news-image' alt='news'/>
             <div className='article-description'>
-                <p className={bigCard ? 'news-card-title big-headline': 'news-card-title'} onClick={goToArticle}>{title}</p>
+                <p className='news-card-title' onClick={goToArticle}>{title}</p>
                 <div className='date-author-wrapper'>
                     <p className='author-paragraph'>
                         <FaRegCalendarAlt style={{color: 'white'}} />

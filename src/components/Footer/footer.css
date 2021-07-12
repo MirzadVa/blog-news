@@ -1,0 +1,18 @@
+.footer-wrapper {
+  height: 150px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-wrapper span {
+  background-color: #ef194f;
+  padding: 2px 5px;
+}
+.footer-wrapper h3 {
+  font-size: 2em;
+  cursor: pointer;
+}
