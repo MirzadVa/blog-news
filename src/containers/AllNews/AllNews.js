@@ -14,20 +14,20 @@ const AllNews = ({restOfHeadlines, smallBoxes}) => {
             {restOfHeadlines?.length > 0 && restOfHeadlines?.map((elem, index) => {
                 if(index < 3){
                     return (
-                        <Col lg={4} md={12} className='box-news'>
-                             <StandardNewsCard key={index} news={elem}/>
+                        <Col lg={4} md={12} className='box-news' key={index}>
+                             <StandardNewsCard  news={elem}/>
                         </Col>
                     )
                 }else{
                     return (
-                            <Col lg={12} className='left-card'>
-                                <LeftImageCard key={index} news={elem}/>
+                            <Col lg={12} className='left-card' key={index}>
+                                <LeftImageCard  news={elem}/>
                             </Col>
                     )
                 }  
             })}
-            {smallBoxes.length > 0 ? smallBoxes.map(elem => (
-                <Col lg={4} md={12} sm={12} className='news-box'>
+            {smallBoxes.length > 0 ? smallBoxes.map((elem, index) => (
+                <Col lg={4} md={12} sm={12} className='news-box' key={index}>
                     <MainNewsCard 
                         imageUrl = {elem.urlToImage}
                         title = {elem.title}

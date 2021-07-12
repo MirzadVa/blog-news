@@ -8,7 +8,7 @@ const TopSevenNews = ({topFiveNews}) => {
     return (
         <Row className='top-headlines'>
             {topFiveNews.length > 0 && topFiveNews.map((elem, index) => (
-                <Col lg={4} md={12} className='news-box'>
+                <Col lg={4} md={12} className='news-box' key={index}>
                     <MainNewsCard 
                         imageUrl = {elem.urlToImage}
                         title = {elem.title}
